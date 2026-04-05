@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iggames — Serious games for organizations</title>
+  <meta name="description" content="iggames designs custom simulation games for business, public administration, universities and NGOs. Education, research, assessment and networking through play." />
+  <meta name="author" content="iggames" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="xp-track" aria-hidden="true">
+    <div class="xp-fill" id="xpFill"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="#top">
+      <span class="logo-mark" aria-hidden="true">◇</span>
+      <span class="logo-text">iggames</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#pillars">Quests</a>
+      <a href="#games">Games</a>
+      <a href="#sectors">Allies</a>
+      <a href="#process">Campaign</a>
+      <a class="nav-cta" href="#contact">Start a build</a>
+    </nav>
+    <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="#pillars">Quests</a>
+    <a href="#games">Games</a>
+    <a href="#sectors">Allies</a>
+    <a href="#process">Campaign</a>
+    <a href="#contact">Start a build</a>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-inner">
+        <p class="hero-kicker">
+          <span class="hero-kicker-highlight">Simulation Games</span>  for Real-World Impact
+        </p>
+        <h1>Level up how your organization <span class="gradient-text">learns, explores, and connects</span></h1>
+        <p class="hero-lead">
+          At <strong>iggames</strong>, we design and build custom simulation games for business, public administration, universities and NGOs—so complex decisions become playable, measurable, and memorable.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Book a discovery call</a>
+          <a class="btn btn-ghost" href="#pillars">Explore use cases</a>
+        </div>
+        <dl class="hero-stats" aria-label="Highlights">
+          <div class="stat">
+            <dt>Modes</dt>
+            <dd>Education · Research · Assessment · Networking</dd>
+          </div>
+          <div class="stat">
+            <dt>Format</dt>
+            <dd>Digital, hybrid, or facilitated live play</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section pillars" id="pillars">
+      <div class="section-head">
+        <span class="section-badge">Main quests</span>
+        <h2>Four ways games drive outcomes</h2>
+        <p>Each engagement is tailored—but these are the recurring “win conditions” our clients aim for.</p>
+      </div>
+      <div class="pillar-grid">
+        <article class="pillar-card" data-pillar="education">
+          <div class="pillar-icon" aria-hidden="true">📚</div>
+          <h3>Education</h3>
+          <p>Turn policies, processes, and scenarios into experiential learning. Learners practice judgment in a safe space—with debriefs that anchor insight to your curriculum or training goals.</p>
+          <ul class="pillar-tags">
+            <li>Onboarding</li>
+            <li>Policy literacy</li>
+            <li>Skills practice</li>
+          </ul>
+        </article>
+        <article class="pillar-card" data-pillar="research">
+          <div class="pillar-icon" aria-hidden="true">🔬</div>
+          <h3>Research</h3>
+          <p>Use simulations as instruments: explore behaviour under constraints, run structured experiments, and gather rich qualitative and quantitative signals from participants.</p>
+          <ul class="pillar-tags">
+            <li>Scenario labs</li>
+            <li>Decision traces</li>
+            <li>Ethics-friendly design</li>
+          </ul>
+        </article>
+        <article class="pillar-card" data-pillar="assessment">
+          <div class="pillar-icon" aria-hidden="true">🎯</div>
+          <h3>Assessment</h3>
+          <p>Observe competence in context—not only recall. Games can surface how individuals and teams prioritize, collaborate, and respond when stakes and trade-offs feel real.</p>
+          <ul class="pillar-tags">
+            <li>Competency mapping</li>
+            <li>Team dynamics</li>
+            <li>Fair rubrics</li>
+          </ul>
+        </article>
+        <article class="pillar-card" data-pillar="networking">
+          <div class="pillar-icon" aria-hidden="true">🤝</div>
+          <h3>Networking</h3>
+          <p>Break the ice with purpose. Shared missions create natural introductions, cross-silo dialogue, and lasting relationships at summits, academies, and stakeholder forums.</p>
+          <ul class="pillar-tags">
+            <li>Events & retreats</li>
+            <li>Stakeholder forums</li>
+            <li>Cross-team alignment</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section games" id="games" aria-labelledby="games-heading">
+      <div class="section-head">
+        <span class="section-badge">Completed quests</span>
+        <h2 id="games-heading">Simulations we’ve shipped</h2>
+        <p>Flagship work from <strong>iggames</strong>—board and hybrid simulations for teams, universities, and public-sector partners.</p>
+      </div>
+      <div class="game-grid">
+        <article class="game-card game-card--featured">
+          <div class="game-featured-media">
+            <div class="game-media-gallery game-media-gallery--dense" role="group" aria-label="Peace by Piece: board, video, components, and photography">
+              <figure class="game-media-hero">
+                <img
+                  class="game-media-hero-img"
+                  src="images/peace-by-piece-board-overview.png"
+                  alt="Peace by Piece: top-down view of the Mali simulation board with faction screens, cards, dice, and tokens"
+                  loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
+                />
+              </figure>
+              <div class="game-media-videos">
+                <div class="game-media-video-frame">
+                  <video
+                    class="game-media-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
+                    aria-label="Peace by Piece: short clip of the game in motion"
+                  >
+                    <source src="videos/peace-by-piece-pxp7.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="game-media-video-frame">
+                  <video
+                    class="game-media-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
+                    aria-label="Peace by Piece: short clip of components and play"
+                  >
+                    <source src="videos/peace-by-piece-pxp6.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+              <div class="game-media-stills game-media-stills--peace">
+                <img
+                  class="game-media-still"
+                  src="images/peace-by-piece-project-cards.png"
+                  alt="Peace by Piece project cards: irrigation, industry and infrastructure, and public health projects with requirements and effects"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/peace-by-piece-faction-cards.png"
+                  alt="Peace by Piece deck: faction, ideology, and action cards including Malian Army, Ansar Dine, events, and confrontation"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/peace-by-piece-constitution-elections.png"
+                  alt="Peace by Piece materials: constitution board, elections card, and score sheet for factions and rounds"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/peace-by-piece-in-play.png"
+                  alt="Peace by Piece in play: angled view of the Mali map, components, and scenario materials"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/peace-by-piece-isaga-grand-prix.png"
+                  alt="ISAGA 2019 Grand Prix Serious Game Design Competition award for Peace by Piece, Kozminski University, Warsaw"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="game-body game-body--featured">
+            <p class="game-client">Universities · Research · Education · Practitioners</p>
+            <h3>Peace by Piece</h3>
+            <p class="game-lead">
+              A simulation game exploring war, peace, and everything in between—grounded in academic research across security studies, political science, anthropology, economics, and sociology.
+            </p>
+            <div class="game-prose">
+              <p>
+                The game simulates conflicts in <strong>Mali</strong>, a country often seen as especially hard to stabilize because relationships between factions are so layered and complex. It combines how groups in northern Mali actually differ—shaped by religion, identities, history, and traditions—with their motivations, resources, power dynamics, and political orientations.
+              </p>
+              <p>
+                Six party interests are represented on the table. Players compete, forge alliances, cooperate, and betray one another, much as in real life. International actors receive tools to intervene, seek resolutions, and support peacebuilding and state formation.
+              </p>
+              <p>
+                Each round introduces new, potentially high-reward challenges. Scenarios let you test combinations of solutions that might apply in the real world. Player feedback has been strongly positive, and sessions also yield rich material for academic research.
+              </p>
+            </div>
+            <h4 class="game-subheading">Players reflect on questions such as</h4>
+            <ul class="game-reflection-list">
+              <li>Is peace in Mali possible?</li>
+              <li>How can opposing factions be reconciled?</li>
+              <li>Are general elections feasible and desirable?</li>
+              <li>Will a constitution help stabilize the country?</li>
+            </ul>
+            <p class="game-prose game-prose--tight">
+              Nothing is predetermined: the sandbox design stays open-ended, with no fixed outcomes—valuable for university teaching, researchers testing hypotheses, and practitioners evaluating strategies before implementation.
+            </p>
+            <aside class="game-credit" aria-label="Credits and recognition">
+              <p>
+                Developed in cooperation with the <strong>University of Warsaw</strong>.
+                <span class="game-credit-sep">·</span>
+                <strong>Grand Prix</strong>, 2019 Serious Game Design Competition, International Simulation &amp; Gaming Association (ISAGA).
+              </p>
+            </aside>
+            <ul class="game-tags">
+              <li>Tabletop simulation</li>
+              <li>6–30 players</li>
+              <li>3–6 hours</li>
+              <li>Sandbox / open outcomes</li>
+            </ul>
+          </div>
+        </article>
+        <article class="game-card game-card--featured">
+          <div class="game-featured-media">
+            <div
+              class="game-media-gallery game-media-gallery--dense game-media-gallery--stills-only"
+              role="group"
+              aria-label="Forest Planting: photography"
+            >
+              <figure class="game-media-hero">
+                <img
+                  class="game-media-hero-img"
+                  src="images/forest-planting/hero.webp"
+                  alt="Forest Planting: four-player setup on a white surface with central forest board, river grid, player mats, and species cards"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <div class="game-media-stills game-media-stills--forest">
+                <img
+                  class="game-media-still"
+                  src="images/forest-planting/still-01-aspen-sheet.webp"
+                  alt="Forest Planting player sheet for aspen species with young and mature tree stages and a tree miniature"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/forest-planting/still-02-gameplay.webp"
+                  alt="Forest Planting gameplay reference sheet, objective to plant and expand a forest, and species cards"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/forest-planting/still-03-species-cards.webp"
+                  alt="Forest Planting species cards: pine, beech, aspen, and oak with strengths and weaknesses"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/forest-planting/still-04-outdoor-play.webp"
+                  alt="Forest Planting session outdoors on the forest floor with seed and growth cards and dice"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/forest-planting/still-05-cover-leaves.webp"
+                  alt="Forest Planting cover art on real fallen leaves: In every Seed there is a Forest"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/forest-planting/still-06-tree-miniature.webp"
+                  alt="Forest Planting board close-up with 3D tree miniature, grid river, and Polish-language cards"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/forest-planting/still-07-board-grass-overhead.webp"
+                  alt="Forest Planting overhead view on grass with autumn leaves, progress card, tiles, and tokens"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/forest-planting/still-08-pine-cards-leaves.webp"
+                  alt="Forest Planting species cards fanned on autumn leaves, including Pine with strengths and weaknesses"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/forest-planting/still-09-aspen-sheet-outdoor.webp"
+                  alt="Forest Planting outdoor play: aspen player board with sapling and mature tree cards and green tokens"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/forest-planting/still-10-beech-miniature-leaves.webp"
+                  alt="Forest Planting beech player board with young and mature tree cards and a 3D tree miniature on autumn leaves"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="game-media-still"
+                  src="images/forest-planting/still-11-dice-cubes-grid.webp"
+                  alt="Forest Planting mossy grid with green dice, yellow and wood cubes, and species cards"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="game-body game-body--featured">
+            <p class="game-client">Business · NGOs · Leadership development · Team offsites</p>
+            <h3>Forest Planting</h3>
+            <p class="game-lead">
+              A simulation experience that helps organizations, leaders, and teams <strong>start, grow, and multiply</strong>—using the forest as a living metaphor for sustainable expansion.
+            </p>
+            <blockquote class="game-quote">
+              <p>
+                “The exchange between the two tree species was dynamic…and so, they forged their duality into oneness, making a forest.”
+              </p>
+              <footer>— Dr. Suzanne Simard, <cite>The Hidden Life of Trees</cite></footer>
+            </blockquote>
+            <h4 class="game-subheading">Why Forest Planting?</h4>
+            <div class="game-prose">
+              <p>
+                A forest is an ecosystem that moves together—designed to grow, multiply, and carry what it needs for sustainability. What if you stopped focusing only on “your tree” and began dreaming of growing a <strong>forest</strong> across your organization and community?
+              </p>
+            </div>
+            <h4 class="game-subheading">We need to play with ideas</h4>
+            <div class="game-prose">
+              <p>
+                Conferences and books flood us with concepts; leaders still need a <strong>safe place to experiment</strong>. Forest Planting lets teams play with multiplication principles and turn insight into workable plans.
+              </p>
+            </div>
+            <h4 class="game-subheading">We need to play with others</h4>
+            <div class="game-prose">
+              <p>
+                Serious play is real: our brains open up when we’re having fun together. As George Bernard Shaw put it, “You don’t stop playing because you grow old, you grow old because you stop playing.” Play and relationships build capacity for change—and reveal how your team really collaborates under pressure.
+              </p>
+            </div>
+            <h4 class="game-subheading">The game — what you will experience</h4>
+            <ol class="game-experience-list">
+              <li>
+                <strong>Simulation.</strong> A beautifully produced board game created by experienced leaders. In a forest setting, your team finds strategies to <strong>plant and expand</strong>: four tree types, each with strengths and weaknesses, compete for limited space and resources to multiply into unreached areas of the board. Nature and team dynamics test vision, strategy, execution, and emotion. Years of research anchor the design in real forest principles and in how teams and organizations plant and multiply.
+              </li>
+              <li>
+                <strong>Debriefing.</strong> The leverage is in the debrief—structured to surface learnings and next steps. Using facilitation approaches such as <strong>Results-based Conversations</strong>, we connect the table experience to your organization and help the team produce concrete actions for implementation.
+              </li>
+            </ol>
+            <h4 class="game-subheading">How we can support you</h4>
+            <div class="game-prose">
+              <p>
+                We don’t aim to lecture—we put you through an experience that <strong>draws out knowledge you already have</strong> and makes it usable. Forest Planting can stand alone or deepen training you already run. We personalize the flow to your priorities.
+              </p>
+            </div>
+            <h4 class="game-subheading">Entrepreneurship</h4>
+            <div class="game-prose">
+              <p>
+                Starting a venture is energizing and demanding. The simulation helps clarify vision and strategy and sparks practical discussion about overcoming growth challenges.
+              </p>
+            </div>
+            <h4 class="game-subheading">Leadership and team dynamics</h4>
+            <div class="game-prose">
+              <p>
+                Mechanics and social play surface personalities, emotions, stress responses, and communication patterns. Many teams learn more in a few hours of play than in a year of routine meetings.
+              </p>
+            </div>
+            <h4 class="game-subheading game-subheading--follow">Debriefing can explore, for example</h4>
+            <ul class="game-reflection-list game-reflection-list--compact">
+              <li>Are we maximizing strengths and minimizing weaknesses as a team?</li>
+              <li>What are the keys to effective communication?</li>
+              <li>How do we break silos and build a culture of collaboration?</li>
+            </ul>
+            <h4 class="game-subheading">Tailoring to your needs</h4>
+            <div class="game-prose">
+              <p>
+                Forest Planting is versatile: we’ve used it with businesses and non-profits—for growth, new markets, and imagination-stretching strategy. Share your goals and we can shape a Forest Planting experience around them.
+              </p>
+            </div>
+            <ul class="game-tags">
+              <li>Tabletop simulation</li>
+              <li>4–40 players</li>
+              <li>3–5 hours</li>
+              <li>Facilitated debrief</li>
+            </ul>
+          </div>
+        </article>
+        <article class="game-card">
+          <div class="game-thumb game-thumb--b">
+            <span class="game-thumb-fallback" aria-hidden="true">3</span>
+          </div>
+          <div class="game-body">
+            <p class="game-client">Business · Assessment</p>
+            <h3>Executive Relay</h3>
+            <p>A timed crisis simulation for leadership cohorts—surfacing how teams delegate, communicate, and reprioritize under ambiguity.</p>
+            <ul class="game-tags">
+              <li>Digital</li>
+              <li>Competency signals</li>
+              <li>8–24 players</li>
+            </ul>
+            <a class="game-link" href="#">Case study or play recap</a>
+          </div>
+        </article>
+        <article class="game-card">
+          <div class="game-thumb game-thumb--c">
+            <span class="game-thumb-fallback" aria-hidden="true">4</span>
+          </div>
+          <div class="game-body">
+            <p class="game-client">NGOs · Networking</p>
+            <h3>Coalition Table</h3>
+            <p>A stakeholder game that builds shared language and trust before joint advocacy—ideal for summits and multi-org programmes.</p>
+            <ul class="game-tags">
+              <li>Hybrid</li>
+              <li>Relationship building</li>
+              <li>6–20 players</li>
+            </ul>
+            <a class="game-link" href="#">Case study or play recap</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section sectors" id="sectors">
+      <div class="section-head">
+        <span class="section-badge">Your world</span>
+        <h2>Built for organizations like yours</h2>
+        <p>At <strong>iggames</strong>, we speak the language of constraints, procurement, and outcomes—whether you operate in the public, private, or civic sphere.</p>
+      </div>
+      <div class="sector-grid">
+        <div class="sector-tile">
+          <h3>Business</h3>
+          <p>Leadership development, strategy offsites, and change programmes that people actually want to play.</p>
+        </div>
+        <div class="sector-tile">
+          <h3>Public administration</h3>
+          <p>Citizen-facing literacy, internal capability building, and policy exploration with clarity and rigour.</p>
+        </div>
+        <div class="sector-tile">
+          <h3>Universities</h3>
+          <p>Courses, research instruments, and campus experiences that bridge theory and practice.</p>
+        </div>
+        <div class="sector-tile">
+          <h3>NGOs</h3>
+          <p>Advocacy, training, and coalition-building through narratives participants can inhabit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="section-head">
+        <span class="section-badge">Campaign map</span>
+        <h2>How iggames co-designs with you</h2>
+        <p>A transparent path from problem framing to playable prototype—no black box.</p>
+      </div>
+      <ol class="process-steps">
+        <li class="process-step unlocked">
+          <span class="step-num">1</span>
+          <div>
+            <h3>Brief & learning goals</h3>
+            <p>We align on audience, constraints, success metrics, and the decisions you want players to wrestle with.</p>
+          </div>
+        </li>
+        <li class="process-step unlocked">
+          <span class="step-num">2</span>
+          <div>
+            <h3>Mechanics & narrative</h3>
+            <p>We map systems, roles, and feedback loops so the game models what matters—without unnecessary complexity.</p>
+          </div>
+        </li>
+        <li class="process-step unlocked">
+          <span class="step-num">3</span>
+          <div>
+            <h3>Prototype & playtests</h3>
+            <p>Early playable builds, facilitator scripts, and iteration cycles until the experience feels credible and fun.</p>
+          </div>
+        </li>
+        <li class="process-step unlocked">
+          <span class="step-num">4</span>
+          <div>
+            <h3>Launch & handover</h3>
+            <p>Deployment support, training for your team, and optional analytics or debrief toolkits.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-panel">
+        <div class="contact-copy">
+          <span class="section-badge">Side quest → main story</span>
+          <h2>Tell us what you want players to practice</h2>
+          <p>Reach out to discuss a tailored simulation, facilitation, or debrief for your team.</p>
+        </div>
+        <div class="contact-card">
+          <a class="btn btn-primary btn-block" href="mailto:i.widawski@iggames.com?subject=Simulation%20game%20inquiry">Email us to get started</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> iggames</p>
+    <p class="footer-note">Serious games. Serious outcomes.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
